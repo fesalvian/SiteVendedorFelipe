@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão de contato Felipe Salviano</title>
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
         body {
             font-family: Arial, sans-serif;
             background-color: #3D3D29;
@@ -40,17 +43,20 @@
             font-style: italic;
             margin-bottom: 15px;
             margin-left: 10px;
+            font-family: rubik;
         }
         .text p {
             font-size: 16px;
             color: #333;
             margin-bottom: 15px;
             margin-left: 10px;
+            font-family: rubik;
         }
         .text span {
             font-size: 24px;
             color: #ffffff;
             margin-left: 10px;
+            font-family: rubik;
         }
         .whatsapp-button {
             background-color: #25D366;
@@ -94,11 +100,128 @@
         }
         .escaneie{
             color: #fff;
+            font-family: rubik;
             font-style: italic;
             font-size: 32px;
             position: absolute;
             top: 80px;
             right: 350px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background-color: #3D3D29;
+            display: grid;
+            grid-template-columns:100vw;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            margin-left: 10%;
+            margin-top: 4%;
+        }
+        .card {
+            background-color: #9C9C87;
+            border-radius: 25px;
+            padding: 20px;
+            width: 75%;
+            height: auto;
+            padding-top: 0px;
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .text {
+            background-color: #B3C1A1;
+            margin-left: -8px;
+            border-radius: 10px;
+            width: 90%;
+            margin-top: 200px;
+            display: grid;
+            height: auto;
+            position: relative;
+        }
+        .text h1 {
+            font-size: 28px;
+            color: #fff;
+            font-style: italic;
+            font-family: rubik;
+            position: relative;
+            display: flex;
+            margin-top: -200px;
+        }
+        .text p {
+            font-size: 16px;
+            color: #333;
+            font-family: rubik;
+            margin-left: 0px;
+
+        }
+        .text span {
+            font-size: 20px;
+            color: #ffffff;
+            margin-left: 10px;
+            font-family: rubik;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            font-size: 20px;
+            width: 200px;
+            height: 30px;
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+            position:absolute;
+            transform: translateX(-50%);
+            margin-top: 100%;
+        }
+        .whatsapp-button img {
+            margin-right: 30px;
+        }
+        .whatsapp-button:hover {
+            background-color: #1EBE5A;
+        }
+        .image {
+            width: 100%;
+            display: flex;
+        }
+        .image img {
+            max-width: 100%;
+        }
+        .vendedorImagem{
+            display: flex;
+            padding-top: 10px;
+            left: 50%;
+            transform: translateX(-10%);
+        }
+        .svgQrCode{
+            padding-top: 930px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            width: 240px;
+            height: 240px;  
+            right: 5%;   
+        }
+        .escaneie{
+            color: #fff;
+            font-family: rubik;
+            font-style: italic;
+            font-size: 32px;
+            position: grid;
+            top: 80px;
+            right: 350px;
+        }
+            
         }
     </style>
 </head>
